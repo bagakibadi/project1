@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Airbnb Cereal App;
+}
+@font-face {
+    font-family: Airbnb Cereal App Bold;
+    src: url('../fonts/AirbnbCerealBold.woff');
+}
+@font-face {
+    font-family: Airbnb Cereal App;
+    src: url('../fonts/AirbnbCerealLight.woff');
+}
+.page {
+    display: flex;
+    border: 2px;
+    width: 100%;
+}
+.img1 {
+    height: 100vh;
+    width: 55%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('../img/bglogin.jpg');
+    background-position: center center;
+    background-size: cover;
+    
+}
+.login {
+    position: relative;
+    height: 100vh;
+    width: 45%;
+    background: white;;
+}
+.judul {
+    font-family: Airbnb Cereal App Bold;
+    font-size: 56px;
+    margin-left: 55px;
+    margin-top: 88px;
+    color: white;
+}
+.textkecil {
+    font-family: Airbnb Cereal App;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 45px;
+    
+}
+.buku {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    float: right;
+    right: 2%;
+    top: 11px;
+}
+.from{
+    width: 80%;
+    margin-top: 110px;
+    margin-left: 100px;
+}
+.textlogin {
+    font-family: Airbnb Cereal App Bold;
+    color: #424242;
+    font-size: 65px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.wlcmtext {
+    width: 100%;
+    font-family: Airbnb Cereal App;
+    color: #424242;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+}
+
+.email{
+    font-family: Airbnb Cereal App;
+    font-size: 15px;
+    padding-top: 13px;
+    padding-left: 15px;
+    width: 80%;
+    height: 60px;
+    background:white;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    bottom: 0;
+    outline: none;
+    transition: .3s;
+}
+
+.email:focus{
+    border-color:dodgerBlue;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.labelemail{
+    position: relative;
+    font-family: Airbnb Cereal App;
+    font-size: 17px;
+    color: #D0CCCC;
+    top: 58px;
+    left: 15px;
+}
+
+.password {
+    font-family: Airbnb Cereal App;
+    font-size: 15px;
+    padding-top: 13px;
+    padding-left: 15px;
+    width: 80%;
+    height: 60px;
+    background:white;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    top: 0;
+    margin-top: 0;
+    outline: none;
+    transition: .3s;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.password:focus{
+    border-color:dodgerBlue;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.labelpassword{
+    position: relative;
+    font-family: Airbnb Cereal App;
+    font-size: 17px;
+    color: #D0CCCC;
+    top: -55px;
+    left: 15px;
+}
+.labelcheckbox{
+    font-family: Airbnb Cereal App;
+    font-size: 17px;
+    color: #D0CCCC;
+}
+.check{
+    position: relative;
+    width: 100%;
+}
+.forgot {
+    color: #424242;
+    font-size: 17px;
+    font-family: Airbnb Cereal App;
+    text-decoration: none;
+    margin-left: 20%;
+}
+.btn-login {
+    font-family: Airbnb Cereal App;
+    font-size: 17px;
+    margin-top: 50px;
+}
+.login-btn {
+    position: relative;
+    text-decoration: none;
+    width: 110px;
+    height: 36px;
+    background: #000000;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 5px 28px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+.signup-btn {
+    position: relative;
+    box-sizing: border-box;
+    text-decoration: none;
+    width: 500px;
+    height: 50px;
+    border: 2px solid #d0cccc;
+    border-radius: 5px;
+    padding: 5px 28px;
+    color: #E0E0E0;
+}
+.policy {
+    margin-top: 50px;
+    font-family: Airbnb Cereal App;
+    font-size: 17px;
+    line-height: 22px;
+    color: #d0cccc;
+}
+.tnghtxt{
+    color: black;
+}
+.tengahtext {
+    color: #D0CCCC;
+}
+
+@media only screen and (max-width: 800px) {
+    .img1 {
+        display: none;
+    }
+    .from {
+        margin-left: 10%;
+        width: 100%;
+    }
+    .login {
+        width: 100vw;
+    }
+    .forgot {
+        margin-right: 5%;
+        position: absolute;
+        margin-left: 40%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .forgot {
+        margin-left: 10%;
+    }
+}

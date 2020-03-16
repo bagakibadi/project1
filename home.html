@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="asset/css/home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.sidebarBtn').click(function(){
+                $('.sidebar').toggleClass('active');
+                $('.sidebarBtn').toggleClass('btnmove')
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="../Project/asset/img/cakep.jpg" class="profile-img">
+            <h2>Niki Zefanya</h2>
+        </div>
+        <ul>
+            <li class="btn-sidebar"><a class="btn-sidebar1" href="#">Explorer</a></li>
+            <li class="btn-sidebar"><a class="btn-sidebar1" href="#">History</a></li>
+            <li class="btn-sidebar"><a class="btn-sidebar1" href="#modal">Add Book*</a></li>
+            <li class="btn-sidebar"><a class="btn-sidebar1" href="index.html">Log Out</a></li>
+        </ul>
+        <button class="sidebarBtn">
+            <span></span>
+        </button>
+    </div>
+    <div class="container">
+        <div class="navbar">
+            <div class="select">
+                <select class="">
+                    <option value="">All Catagories</option>
+                </select>
+                <select class="">
+                    <option value="">All Time</option>
+                </select>
+            </div>
+            <div class="search">
+                <input type="text" class="search-box" placeholder="Search book">
+            </div>
+            <div class="library">
+                <a href="index.html"><img src="../Project/asset/img/buku.png" alt=""></a>
+                <label for="">Library</label>
+            </div>
+        </div>
+        <div class="content">
+            <div class="tampung">
+                <a href="#" class="btn-before"><</a>
+                <a href="#" class="btn-next">></a>
+                <div class="penampung">
+                    <div class="header">
+                        <div class="carousel-header">
+                            <div class="bungkus">
+                                <img src="../Project/asset/img/coverdilan.jpg" alt="">
+                                <div class="gradasi-header">
+                                    <div class="text-header">
+                                        <h2 class="judul-header">Dilan 1990</h2>
+                                        <p class="pencipta-header">Pidi Baiq</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-header slide-show">
+                            <div class="bungkus">
+                                <img src="../Project/asset/img/ubur.jpg" alt="">
+                                <div class="gradasi-header">
+                                    <div class="text-header">
+                                        <h2 class="judul-header">Ubur-ubur Lembur</h2>
+                                        <p class="pencipta-header">Raditya Dika</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-header">
+                            <div class="bungkus">
+                                <img src="../Project/asset/img/laskar.jpg" alt="">
+                                <div class="gradasi-header">
+                                    <div class="text-header">
+                                        <h2 class="judul-header">Laskar Pelangi</h2>
+                                        <p class="pencipta-header">Andrea Hirata</p>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <h3>List Book</h3>
+            </div>
+            <div class="book">
+                <div class="list-book">
+                    <div class="gambar">
+                        <img src="../Project/asset/img/coverdilan.jpg" alt="">
+                    </div>
+                    <a href="display.html" class="book-content">
+                            <h2>Dilan 1990</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id.</p>
+                    </a>
+                </div>
+                <div class="list-book list-center">
+                    <div class="gambar">
+                        <img src="../Project/asset/img/buufck.jpg" alt="">
+                    </div>
+                    <div class="book-content">
+                        <h2>Sebuah Senu Untuk ...</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id.</p>
+                    </div>
+                </div>
+                <div class="list-book">
+                    <div class="gambar">
+                        <img src="../Project/asset/img/react.jpg" alt="">
+                    </div>
+                    <div class="book-content">
+                        <h2>React Native</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="isicontent">
+                <a href="#" class="btnclose">X</a>
+                <h2 class="modal-header">Edit Data</h2>
+                <label class="tableurl">Url Image</lable>
+                <input type="text" name="urlimage" class="urlimage" placeholder="Url Image.."><br>
+                <label class="tabletitle" >Title</label>
+                <input type="text" name="title" class="title" placeholder="Title..."><br>
+                <label for="description" class="
+                labeldescription">Description</label>
+                <textarea class="description" cols="30" rows="10" placeholder="Description.."></textarea>
+                
+            </div>
+            <div class="modal-save">
+                <a href="#" class="btnsave">Save</a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="isicontent">
+                <a href="#" class="btnclose">X</a>
+                <h2 class="modal-header">Add Data</h2>
+                <label for="" class="modal-label">Url Image</label>
+                <input type="text" class="modal-input" placeholder="Url Image.."><br>
+                <label for="" class="modal-label">Title</label>
+                <input type="text" class="modal-input" placeholder="Title..."><br>
+                <label for="" class="modal-label">Description</label><br>
+                <textarea class="description" cols="30" rows="10" placeholder="Description.."></textarea>
+            </div>
+            <div class="modal-save">
+                <a href="#" class="btnsave">Save</a>
+            </div>
+        </div>
+    </div> -->
+</body>
+
+</html>

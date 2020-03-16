@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/display.css">
+
+</head>
+<body>
+    
+    <header class="container">
+        <a href="home.html" class="back"><img src="asset/img/Arrow.png" alt=""></a>
+        <div class="btntambah">
+            <a href="#modal" class="edit">Edit</a>
+            <a href="#modal2" class="delete">Delete</a>
+        </div>
+    </header>
+    <img src="../Project/asset/img/coverdilan.jpg" class="imgdilan">
+
+    <div class="container2">
+        
+        <button type="button" class="button-novel">Novel</button>
+        <p class="available">Available</p>
+
+        <h2 class="judul">BAGUS 1990</h2>
+        <p class="tanggal">30 Juni 2019</p>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac diam eget est rutrum ultrices. Donec laoreet enim a massa dapibus, cursus egestas dui pulvinar. Proin sit amet accumsan lectus. Nullam auctor auctor consequat. Donec semper magna erat, sed fringilla lacus pretium eget. Cras porttitor, nibh sit amet interdum bibendum, nibh velit accumsan tellus, vel vehicula tellus leo vitae ipsum. Praesent sit amet libero sed orci ullamcorper efficitur. Pellentesque in euismod purus, sit amet ultrices tortor. Vestibulum ante dui, tempor at dui id, tincidunt euismod diam. Integer pellentesque massa nibh, ac eleifend odio malesuada sed. Phasellus orci sem, cursus nec orci ut, accumsan facilisis lacus. Nullam at elementum nibh, ac gravida felis. In sagittis rhoncus nisi tempus dignissim. Sed fringilla consequat ante vitae lobortis. Cras posuere ligula vel enim suscipit malesuada. Vivamus non nulla ut ante imperdiet euismod quis nec massa.</p>
+    </div>
+    <div class="button">
+        <button class="btnborrow">Borrow</button>
+    </div>
+    <div class="modal" id="modal">
+        <div class="content">
+            <div class="isicontent">
+                <a href="#" class="btnclose">X</a>
+                <h2 class="header">Edit Data</h2>
+                <label class="tableurl">Url Image</lable>
+                <input type="text" name="urlimage" class="urlimage" placeholder="http://gambar.com/dilan.jpg"><br>
+                <label class="tabletitle" >Title</label>
+                <input type="text" name="title" class="title" placeholder="Dilan 1990"><br>
+                <label for="description" class="
+                labeldescription">Description</label>
+                <textarea class="description" cols="30" rows="10" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac diam eget est rutrum ultrices. Donec laoreet enim a massa dapibus, cursus egestas dui pulvinar."></textarea>
+                
+            </div>
+            <div class="modal-save">
+                <a href="#" class="btnsave">Save</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal2" id="modal2">
+        <div class="content2">
+            <div class="isicontent2">
+                <a href="#" class="btnclose2">X</a>
+                <div class="isi">
+                    <img src="asset/img/ceklis.png" class="ceklis"> 
+                </div>
+                <div class="pisi">
+                    <p>Data <span class="tengah">Dilan 1990</span> berhasil dihapus !</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
